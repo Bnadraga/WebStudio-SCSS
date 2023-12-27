@@ -1,0 +1,173 @@
+.header{
+    padding-bottom: 28px;
+    border-bottom: 1px solid $primaryTextColor;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+
+    &__logo{
+        color: $logoColor;
+        font-family: 'Raleway';
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.78px;
+    }
+
+    &__site-nav{
+        color: $titleTextColor;
+        display: flex;
+        margin-left: -200px;
+    }
+
+    &__site-item-link:not(:last-child){
+        margin-right: 50px;
+    }
+
+    &__site-link{
+        color: $titleTextColor;
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        position: relative;
+
+        &:hover,
+        &:focus{
+            color: $backgroundButtonColor;
+        }
+    }
+
+    &__site-link.current::after{
+        content: "";
+        display: block;
+        background-color: $backgroundButtonColor;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -35px;
+        transition: background-color 2000ms ease;
+    }
+
+    &__site-link:hover.current::after{
+        background-color: $backgroundColorAfter;
+        transition: background-color 2000ms ease;
+    }
+
+    &__contact-list{
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        display: flex;
+    }
+    
+    &__contact-item{
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact-item &__site-email{
+        transition: color 250ms $timeFunction;
+    }
+
+    &__site-email{
+        color: $primaryTextColor;
+
+        &:hover{
+            animation-name: chMail;
+            animation-timing-function: ease;
+            animation-duration: 2000ms;
+        }
+    }
+
+    &__site-email &__icon-email{
+        transition: fill 250ms $timeFunction;
+    }
+
+    &__icon-email{
+        margin-right: 10px;
+        fill: $primaryTextColor;
+        text-decoration: none;
+    }
+
+    &__site-number{
+        color: $primaryTextColor;
+        margin-top: -2px;
+
+        &:hover{
+            animation-name: chNumber;
+            animation-timing-function: ease;
+            animation-duration: 2000ms;
+        }
+    }
+}
+// .icon-phone{
+//     margin-left: 30px;
+//     margin-right: 10px;
+//     text-decoration: none;
+// }
+// .contact-item .site-number{
+//     transition: color 250ms var(--time-function);
+// }
+// .site-number .icon-phone{
+//     transition: fill 250ms var(--time-function);
+// }
+// a:hover .icon-email{
+//     animation-name: chEmail;
+//     animation-timing-function: ease;
+//     animation-duration: 2000ms;
+// }
+// @keyframes chEmail{
+//     0%{
+//         fill: var(--primary-text-color);
+//     }
+//     50%{
+//         fill: var(--background-button-color);
+//     }
+//     100%{
+//         fill: var(--primary-text-color);
+//     }
+// }
+// a:hover .icon-phone{
+//     animation-name: chPhone;
+//     animation-timing-function: ease;
+//     animation-duration: 2000ms;
+// }
+// @keyframes chPhone{
+//     0%{
+//         fill: var(--primary-text-color);
+//     }
+//     50%{
+//         fill: var(--background-button-color);
+//     }
+//     100%{
+//         fill: var(--primary-text-color);
+//     }
+// }
+// @keyframes chNumber{
+//     0%{
+//         color: var(--primary-text-color);
+//     }
+//     50%{
+//         color: var(--background-button-color);
+//     }
+//     100%{
+//         color: var(--primary-text-color);
+//     }
+// }
+// @keyframes chMail{
+//     0%{
+//         color: var(--primary-text-color);
+//     }
+//     50%{
+//         color: var(--background-button-color);
+//     }
+//     100%{
+//         color: var(--primary-text-color);
+//     }
+// }
+// .blue{
+//     color: var(--background-button-color);
+// }
