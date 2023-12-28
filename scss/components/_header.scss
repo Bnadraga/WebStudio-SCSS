@@ -68,22 +68,20 @@
         align-items: center;
     }
 
+    &__contact-item &__site-number{
+        transition: color 250ms var(--time-function);
+    }
+
     &__contact-item &__site-email{
         transition: color 250ms $timeFunction;
     }
 
-    &__site-email{
-        color: $primaryTextColor;
-
-        &:hover{
-            animation-name: chMail;
-            animation-timing-function: ease;
-            animation-duration: 2000ms;
-        }
-    }
-
     &__site-email &__icon-email{
         transition: fill 250ms $timeFunction;
+    }
+
+    &__site-number &__icon-phone{
+        transition: fill 250ms var(--time-function);
     }
 
     &__icon-email{
@@ -92,82 +90,86 @@
         text-decoration: none;
     }
 
-    &__site-number{
-        color: $primaryTextColor;
-        margin-top: -2px;
+    &__icon-phone{
+        margin-left: 30px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
 
-        &:hover{
-            animation-name: chNumber;
-            animation-timing-function: ease;
-            animation-duration: 2000ms;
-        }
+    &__logo-blue{
+        color: var(--background-button-color);
     }
 }
-// .icon-phone{
-//     margin-left: 30px;
-//     margin-right: 10px;
-//     text-decoration: none;
-// }
-// .contact-item .site-number{
-//     transition: color 250ms var(--time-function);
-// }
-// .site-number .icon-phone{
-//     transition: fill 250ms var(--time-function);
-// }
-// a:hover .icon-email{
-//     animation-name: chEmail;
-//     animation-timing-function: ease;
-//     animation-duration: 2000ms;
-// }
-// @keyframes chEmail{
-//     0%{
-//         fill: var(--primary-text-color);
-//     }
-//     50%{
-//         fill: var(--background-button-color);
-//     }
-//     100%{
-//         fill: var(--primary-text-color);
-//     }
-// }
-// a:hover .icon-phone{
-//     animation-name: chPhone;
-//     animation-timing-function: ease;
-//     animation-duration: 2000ms;
-// }
-// @keyframes chPhone{
-//     0%{
-//         fill: var(--primary-text-color);
-//     }
-//     50%{
-//         fill: var(--background-button-color);
-//     }
-//     100%{
-//         fill: var(--primary-text-color);
-//     }
-// }
-// @keyframes chNumber{
-//     0%{
-//         color: var(--primary-text-color);
-//     }
-//     50%{
-//         color: var(--background-button-color);
-//     }
-//     100%{
-//         color: var(--primary-text-color);
-//     }
-// }
-// @keyframes chMail{
-//     0%{
-//         color: var(--primary-text-color);
-//     }
-//     50%{
-//         color: var(--background-button-color);
-//     }
-//     100%{
-//         color: var(--primary-text-color);
-//     }
-// }
-// .blue{
-//     color: var(--background-button-color);
-// }
+.header__site-email{
+    color: $primaryTextColor;
+
+    &:hover{
+        animation-name: chMail;
+        animation-timing-function: ease;
+        animation-duration: 2000ms;
+    }
+}
+@keyframes chMail{
+    0%{
+        color: $primaryTextColor;
+    }
+    50%{
+        color: $backgroundButtonColor;
+    }
+    100%{
+        color: $primaryTextColor;
+    }
+}
+.header__site-number{
+    color: $primaryTextColor;
+    margin-top: -2px;
+
+    &:hover{
+        animation-name: chNumber;
+        animation-timing-function: ease;
+        animation-duration: 2000ms;
+    }
+}
+@keyframes chNumber{
+    0%{
+        color: $primaryTextColor;
+    }
+    50%{
+        color: $backgroundButtonColor;
+    }
+    100%{
+        color: $primaryTextColor;
+    }
+}
+a:hover .header__icon-email{
+    animation-name: chEmail;
+    animation-timing-function: ease;
+    animation-duration: 2000ms;
+}
+@keyframes chEmail{
+    0%{
+        fill: $primaryTextColor;
+    }
+    50%{
+        fill: $backgroundButtonColor;
+    }
+    100%{
+        fill: $primaryTextColor;
+    }
+}
+a:hover .header__icon-phone{
+    animation-name: chPhone;
+    animation-timing-function: ease;
+    animation-duration: 2000ms;
+}
+@keyframes chPhone{
+    0%{
+        fill: $primaryTextColor;
+    }
+    50%{
+        fill: $backgroundButtonColor;
+    }
+    100%{
+        fill: $primaryTextColor;
+    }
+}
