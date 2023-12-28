@@ -9,6 +9,10 @@
         padding-top: 24px;
     }
 
+    &__list{
+        display: flex;
+    }
+
     &__logo{
         color: $logoColor;
         font-family: 'Raleway';
@@ -23,15 +27,12 @@
         margin-left: -200px;
     }
 
-    &__site-item-link:not(:last-child){
-        margin-right: 50px;
-    }
-
     &__site-link{
         color: $titleTextColor;
         font-weight: 500;
         letter-spacing: 0.28px;
         position: relative;
+        margin-right: 53px;
 
         &:hover,
         &:focus{
@@ -100,6 +101,13 @@
         color: var(--background-button-color);
     }
 }
+
+
+.header__logo-blue{
+    color: $backgroundButtonColor;
+}
+
+
 .header__site-email{
     color: $primaryTextColor;
 

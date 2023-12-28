@@ -1,0 +1,15 @@
+@mixin spin(){
+    background-color: $primaryBackgroundColor;
+    background-image: url(https://wordwallapp.azureedge.net/static/content/images/loading.1hrr1oghhotykdolwhxpj_g2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 25;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 450px;
+}
