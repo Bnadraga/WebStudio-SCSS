@@ -40,7 +40,6 @@
     &__social{
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
         padding-bottom: 36px;
     }
 
@@ -117,7 +116,6 @@
 
         &__list{
             display: flex;
-    
         }
     
         &__title{
@@ -132,7 +130,8 @@
         }
     
         &__social{
-            margin-bottom: 42px;
+            margin-top: 28px;
+            padding-bottom: 42px;
             display: flex;
             justify-content: center;
         }

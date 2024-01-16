@@ -90,6 +90,18 @@
             transition: background-color 250ms $timeFunction;
         }
     }
+
+    &__social{
+        margin-left: 70px;
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 93px;
+    }
+
+    &__social-list{
+        display: flex;
+    }
 }
 
 //     &__social-svg{
@@ -100,14 +112,10 @@
 //         display: flex;
 //         flex-direction: column;
 //     }
-
-//     &__social{
-//         margin-left: 70px;
-//         margin-top: -10px;
-//         display: flex;
-//         flex-direction: column;
-//         margin-right: 93px;
-//     }
+// &__social{
+//     margin-left: 70px;
+//     margin-top: -10px;
+// }
 
 //     &__social-title{
 //         color: $secondaryTextColor;
@@ -117,9 +125,7 @@
 //         margin-bottom: 32px;
 //     }
 
-//     &__social-list{
-//         display: flex;
-//     }
+//     
 
 //     &__svg{
 //         display: flex;
