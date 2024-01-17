@@ -1,49 +1,54 @@
 .portfolio{
-    &__list-button{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-        margin-top: 94px;
-        gap: 9px;
-    }
-
-    &__button{
-        border-radius: 4px;
-        background-color: $backgroundTeamColor;
-        border: none;
-        padding: 6px 22px;
-        color: $titleTextColor;
-        transition: background-color 250ms $timeFunction;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 26px;
-        cursor: pointer;
-    }
-
-    &__button:hover,
-    &__button:focus{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.portfolio__list-button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio__project-list{
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+.portfolio__button{
+    border-radius: 4px;
+    background-color: $backgroundTeamColor;
+    border: none;
+    padding: 6px 22px;
+    color: $titleTextColor;
+    transition: background-color 250ms $timeFunction;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    
+    &:hover,
+    &:focus{
         background-color: $backgroundButtonColor;
         color: $secondaryTextColor;
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     }
-
-    &__project-list{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+}
+    .portfolio__project-item{
+        border: 1px solid #EEE;
+        max-width: 450px;
         margin-bottom: 30px;
+
+        &:hover,
+        &:focus{
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        }
     }
 
-    &__block-wrap{
-        position: relative;
-        overflow: hidden;
-    }
-
-    &__overley{
+    .portfolio__overley{
         position: absolute;
         top: 0;
         left: 0;
         padding: 63px 24px;
+        width: 100%;
         font-size: 18px;
         letter-spacing: 0.03em;
         line-height: 1.6;
@@ -53,40 +58,70 @@
         transition: transform 250ms linear, opacity 250ms linear;
         opacity: 0;
     }
-
-    &__block-link:hover &__overley{
+    .portfolio__block-link:focus .portfolio__overley,
+    .portfolio__block-link:hover .portfolio__overley{
         transform: translateY(0);
         opacity: 1;
     }
-
-    &__project-name{
+    .portfolio__project-name{
         color: $titleTextColor;
         font-size: 18px;
         font-weight: 700;
         line-height: 36px;
         letter-spacing: 1.08px;
-        padding-left: 24px;
         padding-top: 20px;
+        padding-left: 24px;
     }
 
-    &__addition{
+    .portfolio__addition{
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
         letter-spacing: 0.48px;
-        padding-left: 24px;
         text-decoration: none;
         color: $primaryTextColor;
+        padding-left: 24px;
+        padding-bottom: 20px;
+    }
+    .portfolio__img{
+        width: 100%;
+    }
+    .portfolio__block-wrap{
+        position: relative;
+        overflow: hidden;
     }
 
-    &__project-item{
+@media screen and (min-width: 767px){
+    .portfolio__project-list{
+        gap: 30px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio__project-item{
+        width: 354px;
+    }
+    .portfolio__list-button{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px){
+    .portfolio__list-button{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        padding-top: 94px;
+    }
+
+    .portfolio__project-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .portfolio__project-item{
         border: 1px solid #EEE;
         width: 370px;
-        height: 404px;
-        flex-basis: calc((100% - 60px) / 3);
-
-        &:hover{
-            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-        }
     }
 }

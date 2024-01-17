@@ -12,6 +12,7 @@
         font-size: 26px;
         font-weight: 700;
         letter-spacing: 0.78px;
+        margin: 0 auto;
     }
 
     &__white{
@@ -29,18 +30,21 @@
         letter-spacing: 0.42px;
         cursor: pointer;
         padding-top: 20px;
+        margin: 0 auto;
     }
 
     &__email{
         color: rgba(255, 255, 255, 0.60);
         cursor: pointer;
         padding-top: 9px;
+        margin: 0 auto;
     }
 
     &__number{
         color: #ffffff99;
         cursor: pointer;
         padding-top: 9px;
+        margin: 0 auto;
     }
 
     &__telegram-icon{
@@ -102,50 +106,55 @@
     &__social-list{
         display: flex;
     }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__information{
+        display: flex;
+        flex-direction: column;
+    }
+    &__social-svg{
+        fill: $secondaryTextColor;
+    }
+
+    &__social-title{
+        color: $secondaryTextColor;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    &__svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.10);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: background-color 250ms $timeFunction;
+    }
+
+    &__social-item:not(:last-child){
+        margin-right: 10px;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 480px){
+    .page-footer__email-input{
+        min-width: 450px;
+        max-width: 450px;
+    }
 }
 
-//     &__social-svg{
-//         fill: $secondaryTextColor;
-//     }
 
-//     &__information{
-//         display: flex;
-//         flex-direction: column;
-//     }
-// &__social{
-//     margin-left: 70px;
-//     margin-top: -10px;
-// }
-
-//     &__social-title{
-//         color: $secondaryTextColor;
-//         font-weight: 700;
-//         letter-spacing: 0.42px;
-//         text-transform: uppercase;
-//         margin-bottom: 32px;
-//     }
-
-//     
-
-//     &__svg{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         background-color: rgba(255, 255, 255, 0.10);
-//         width: 44px;
-//         height: 44px;
-//         border-radius: 50%;
-//         transition: background-color 250ms $timeFunction;
-//     }
-
-//     &__social-item:not(:last-child){
-//         margin-right: 10px;
-//     }
-
-//     &__wrapper{
-//         display: flex;
-//         align-items: center;
-//     }
 
 // }
 // .page-footer__svg:hover{
