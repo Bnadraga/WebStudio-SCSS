@@ -414,7 +414,7 @@ a:hover .header__icon-phone {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   min-width: 450px;
-  min-height: 609px;
+  max-height: 609px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -438,12 +438,10 @@ a:hover .header__icon-phone {
   font-weight: 700;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+.modal__form-wrap {
+  margin: 0 auto;
+  text-align: center;
 }
 .modal__form-input {
   margin-top: 4px;
@@ -488,13 +486,14 @@ a:hover .header__icon-phone {
   font-weight: 400;
   line-height: 171.429%;
   letter-spacing: 0.42px;
+  font-size: 12px;
 }
 .modal__form-policy-link {
   text-decoration: underline;
   color: #2196F3;
 }
 .modal__comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   padding: 12px 16px;
@@ -570,7 +569,7 @@ a:hover .header__icon-phone {
 }
 .modal-close-button {
   margin-top: 8px;
-  margin-left: 490px;
+  margin-left: 400px;
   width: 30px;
   height: 30px;
   background-color: #fff;
@@ -582,12 +581,6 @@ a:hover .header__icon-phone {
   background-image: url(./images/icons.svg#icon-close);
   background-repeat: no-repeat;
   background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .benefits {
@@ -910,7 +903,8 @@ a:hover .header__icon-phone {
   }
 }
 .client {
-  margin: 60px 0;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .client__title {
   color: #212121;
@@ -931,6 +925,9 @@ a:hover .header__icon-phone {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .client__wrapper {
   border: 1px solid #AFB1B8;
@@ -949,6 +946,7 @@ a:hover .header__icon-phone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 .client__wrapper:hover .client__svg {
   -webkit-animation-name: chClientsvg;
@@ -1133,7 +1131,7 @@ a:hover .header__icon-phone {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px 0;
   padding-left: 16px;
-  padding-right: 200px;
+  padding-right: 387px;
 }
 .page-footer__email-btn {
   color: #fff;
@@ -1150,6 +1148,8 @@ a:hover .header__icon-phone {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 20px;
   width: 200px;
+  padding-left: 5px;
+  position: relative;
 }
 .page-footer__email-btn:hover {
   background-color: #196baf;
@@ -1283,6 +1283,11 @@ a:hover .header__icon-phone {
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
+@media screen and (min-width: 479px) {
+  .page-footer__email-input {
+    padding-right: 280px;
+  }
+}
 @media screen and (min-width: 767px) {
   .page-footer__wrapper {
     display: -webkit-box;
@@ -1294,6 +1299,58 @@ a:hover .header__icon-phone {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .page-footer__email {
+    margin: 0 auto;
+  }
+  .page-footer__social {
+    margin-top: -20px;
+  }
+  .page-footer__information {
+    margin-right: 200px;
+    margin-left: 61px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__information {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .page-footer__email-title {
+    margin: 0;
+  }
+  .page-footer__email-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .page-footer__btn-email-wrap {
+    margin: 0;
+  }
+  .page-footer__email-btn {
+    margin-top: 0;
+  }
+  .page-footer__email-input {
+    padding-right: 200px;
+  }
+  .page-footer__logo {
+    margin: 0;
+  }
+  .page-footer__address {
+    margin: 0;
+  }
+  .page-footer__mail {
+    margin: 0;
+  }
+  .page-footer__number {
+    margin: 0;
+  }
+  .page-footer {
+    margin: 0;
   }
 }
 .portfolio {
