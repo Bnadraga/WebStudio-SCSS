@@ -207,11 +207,25 @@
 
     .page-footer__email-title{
         margin: 0;
+        margin-left: 93px;
+    }
+
+    .page-footer__email{
+        margin-top: -60px;
     }
 
     .page-footer__email-form{
         display: flex;
         flex-direction: row;
+        margin-left: 93px;
+    }
+
+    .page-footer__social{
+        margin-left: 70px;  
+    }
+
+    .page-footer__social-title{
+        margin: 0;
     }
 
     .page-footer__btn-email-wrap{
@@ -220,6 +234,7 @@
 
     .page-footer__email-btn{
         margin-top: 0;
+        margin-left: 12px;
     }
 
     .page-footer__email-input{

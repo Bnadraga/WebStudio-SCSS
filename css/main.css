@@ -566,10 +566,23 @@ a:hover .header__icon-phone {
     min-width: 528px;
     min-height: 581px;
   }
+  .modal__form-policy-link {
+    font-size: 14px;
+  }
+  .modal__form-policy-text {
+    font-size: 14px;
+  }
+  .modal-close-button {
+    position: relative;
+    left: 90px;
+    margin-left: 0;
+  }
 }
 .modal-close-button {
   margin-top: 8px;
   margin-left: 400px;
+  padding-top: 5px;
+  padding-left: 5px;
   width: 30px;
   height: 30px;
   background-color: #fff;
@@ -1318,6 +1331,10 @@ a:hover .header__icon-phone {
   }
   .page-footer__email-title {
     margin: 0;
+    margin-left: 93px;
+  }
+  .page-footer__email {
+    margin-top: -60px;
   }
   .page-footer__email-form {
     display: -webkit-box;
@@ -1327,12 +1344,20 @@ a:hover .header__icon-phone {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: 93px;
+  }
+  .page-footer__social {
+    margin-left: 70px;
+  }
+  .page-footer__social-title {
+    margin: 0;
   }
   .page-footer__btn-email-wrap {
     margin: 0;
   }
   .page-footer__email-btn {
     margin-top: 0;
+    margin-left: 12px;
   }
   .page-footer__email-input {
     padding-right: 200px;

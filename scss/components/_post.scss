@@ -218,11 +218,26 @@
     .modal{
         min-width: 528px;
         min-height: 581px;
+
+        &__form-policy-link{
+            font-size: 14px;
+        }
+
+        &__form-policy-text{
+            font-size: 14px;
+        }
+    }
+    .modal-close-button{
+        position: relative;
+        left: 90px;  
+        margin-left: 0;  
     }
 }
 .modal-close-button{
     margin-top: 8px;
     margin-left: 400px;
+    padding-top: 5px;
+    padding-left: 5px;
     width: 30px;
     height: 30px;
     background-color: $primaryBackgroundColor;
