@@ -91,6 +91,11 @@
         fill: $primaryTextColor;
     }       
 }
+@media screen and (min-width: 480px){
+    .team__list-card{
+        width: 10px;
+    }
+}
 @media screen and (min-width: 768px){
     .team__list{
         display: flex;
