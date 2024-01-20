@@ -414,15 +414,15 @@ a:hover .header__icon-phone {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 450px;
-  max-height: 609px;
+  min-width: 200px;
+  max-width: 450px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .modal__icon {
-  fill: currentColor;
+  fill: #000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -439,17 +439,23 @@ a:hover .header__icon-phone {
   font-weight: 700;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
+  width: 150px;
 }
 .modal__form-wrap {
-  margin: 0 auto;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .modal__form-input {
   margin-top: 4px;
   padding: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 42px;
+  padding-left: 20px;
 }
 .modal__form-input:focus {
   outline: none;
@@ -561,6 +567,14 @@ a:hover .header__icon-phone {
     min-width: 450px;
     min-height: 609px;
   }
+  .modal__form-title {
+    width: 370px;
+  }
+  .modal-close-button {
+    margin-left: 0;
+    position: relative;
+    left: 170px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -573,15 +587,18 @@ a:hover .header__icon-phone {
   .modal__form-policy-text {
     font-size: 14px;
   }
+  .modal__form-title {
+    width: 370px;
+  }
   .modal-close-button {
-    position: relative;
-    left: 90px;
     margin-left: 0;
+    position: relative;
+    left: 250px;
   }
 }
 .modal-close-button {
   margin-top: 8px;
-  margin-left: 400px;
+  margin-left: 240px;
   padding-top: 5px;
   padding-left: 5px;
   width: 30px;
@@ -1430,6 +1447,7 @@ a:hover .header__icon-phone {
 
 .portfolio__project-item {
   border: 1px solid #EEE;
+  min-width: 240px;
   max-width: 450px;
   margin-bottom: 30px;
 }
