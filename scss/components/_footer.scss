@@ -71,7 +71,8 @@
         border: 1px solid rgba(255, 255, 255, 0.30);
         padding: 15px 0;
         padding-left: 16px;
-        padding-right: 387px;
+        min-width: 230px;
+        max-width: 450px;
     }
 
     &__email-btn{
@@ -177,9 +178,9 @@
         background-color: rgba(255, 255, 255, 0.10);
     }
 }
-@media screen and (max-width: 479px){
+@media screen and (min-width: 480px){
     .page-footer__email-input{
-        padding-right: 230px;
+        padding-right: 270px;
     }
 }
 @media screen and (min-width: 767px){

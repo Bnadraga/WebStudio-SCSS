@@ -35,6 +35,7 @@ a {
 
 img {
   display: block;
+  width: 100%;
 }
 
 body {
@@ -758,7 +759,8 @@ a:hover .header__icon-phone {
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
-  width: 450px;
+  min-width: 240px;
+  max-width: 450px;
   margin-bottom: 30px;
 }
 .team__social {
@@ -855,9 +857,10 @@ a:hover .header__icon-phone {
     fill: #757575;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .team__list-card {
-    width: 10px;
+    min-width: 240px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1149,7 +1152,8 @@ a:hover .header__icon-phone {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px 0;
   padding-left: 16px;
-  padding-right: 387px;
+  min-width: 230px;
+  max-width: 450px;
 }
 .page-footer__email-btn {
   color: #fff;
@@ -1301,9 +1305,9 @@ a:hover .header__icon-phone {
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .page-footer__email-input {
-    padding-right: 230px;
+    padding-right: 270px;
   }
 }
 @media screen and (min-width: 767px) {
