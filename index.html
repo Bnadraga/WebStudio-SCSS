@@ -48,10 +48,20 @@
         </div>
     </header> -->
     <header class="header">
-        <div class="menu-container js-menu-container">
-            <button class="menu-button js-close-menu" type="button">
+        <a class="header__logo" href="./index.html"><span class="header__logo-blue">Web</span>Studio</a>
+        <button 
+            class="menu-button-open js-open-menu" 
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
                 <svg class="menu-button__close">
-                    <use class="icon-cross" href=""></use>
+                    <use class="icon-cross" href="./img/portfolio/symbol-defs-mobile-menu.svg#icon-mobile-open"></use>
+                </svg>
+            </button>
+        <div class="menu-container js-menu-container">
+            <button class="menu-button-close js-close-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
                 </svg>
             </button>
             <div class="menu-box">
@@ -59,13 +69,13 @@
                     <nav>
                         <ul class="mobile-menu__list">
                             <li class="mobile-menu__item">
-                                <a class="mobile-munu-link" href="/index.html">Студія</a>
+                                <a class="mobile-menu-link" href="/index.html">Студія</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a class="mobile-munu-link" href="/portfolio.html">Портфоліо</a>
+                                <a class="mobile-menu-link" href="/portfolio.html">Портфоліо</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a class="mobile-munu-link" href="#">Контакти</a>
+                                <a class="mobile-menu-link" href="#">Контакти</a>
                             </li>
                         </ul>
                     </nav>
@@ -80,16 +90,16 @@
                 </div>
             </div>
             <div>
-                <a href="" class="mobile-social">
+                <a href="#" class="mobile-social">
                     Instagram
                 </a>
-                <a href="" class="mobile-social">
+                <a href="#" class="mobile-social">
                     Twitter
                 </a>
-                <a href="" class="mobile-social">
+                <a href="#" class="mobile-social">
                     Facebook
                 </a>
-                <a href="" class="mobile-social">
+                <a href="#" class="mobile-social">
                     Linkedin
                 </a>
             </div>
