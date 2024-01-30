@@ -84,10 +84,6 @@ body {
           transform: translateX(0);
 }
 
-.header__wrapper {
-  display: none;
-}
-
 .mobile-menu__contlist {
   margin-bottom: 64px;
 }
@@ -130,12 +126,6 @@ body {
   height: 10px;
 }
 
-.header__logo {
-  position: relative;
-  top: 16px;
-  left: 15px;
-}
-
 .mobile-menu-link {
   color: #212121;
   text-align: center;
@@ -168,9 +158,12 @@ body {
 .mobile-logo {
   color: #000;
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
+  position: relative;
+  top: 16px;
+  left: 15px;
 }
 
 .mobile-menu__mail {
@@ -226,16 +219,27 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .header__mobile-menu {
     display: none;
   }
-  .mobile-menu {
+}
+@media screen and (max-width: 767px) {
+  .header__logo {
     display: none;
   }
-  .header {
-    padding: 0;
+  .header__site-nav {
+    display: none;
   }
-  .menu-button-open {
+  .header__list {
+    display: none;
+  }
+  .header__site-link {
+    display: none;
+  }
+  .header__site-email {
+    display: none;
+  }
+  .header__site-number {
     display: none;
   }
 }
@@ -318,8 +322,8 @@ body {
           align-items: center;
 }
 .header__contact-item .header__site-number {
-  -webkit-transition: color 250ms var(--time-function);
-  transition: color 250ms var(--time-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__contact-item .header__site-email {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -330,8 +334,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__site-number .header__icon-phone {
-  -webkit-transition: fill 250ms var(--time-function);
-  transition: fill 250ms var(--time-function);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__icon-email {
   margin-right: 10px;
@@ -344,7 +348,7 @@ body {
   text-decoration: none;
 }
 .header__logo-blue {
-  color: var(--background-button-color);
+  color: #2196F3;
 }
 
 .header__logo-blue {

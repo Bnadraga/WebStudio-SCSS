@@ -13,9 +13,6 @@
 .menu-container.is-open{
     transform: translateX(0);
 }
-.header__wrapper{
-  display: none;
-}
 .mobile-menu__contlist{
   margin-bottom: 64px;
 }
@@ -47,11 +44,6 @@
     width: 50px;
     height: 10px;
 }
-.header__logo{
-    position: relative;
-    top: 16px;
-    left: 15px;
-}
 .mobile-menu-link{
     color: $titleTextColor;
     text-align: center;
@@ -79,9 +71,12 @@
 .mobile-logo{
   color: $logoColor;
   font-family: 'Raleway';
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
+  position: relative;
+  top: 16px;
+  left: 15px;
 }
 .mobile-menu__mail{
   color: $primaryTextColor;
@@ -125,16 +120,27 @@
   }
 }
 @media screen and (min-width: 768px){
-    .menu-button{
-        display: none;
+  .header__mobile-menu{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px){
+    .header__logo{
+      display: none;
     }
-    .mobile-menu{
-        display: none;
+    .header__site-nav{
+      display: none;
     }
-    .header{
-        padding: 0;
+    .header__list{
+      display: none;
     }
-    .menu-button-open{
+    .header__site-link{
+      display: none;
+    }
+    .header__site-email{
+      display: none;
+    }
+    .header__site-number{
       display: none;
     }
 }

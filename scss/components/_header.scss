@@ -70,7 +70,7 @@
     }
 
     &__contact-item &__site-number{
-        transition: color 250ms var(--time-function);
+        transition: color 250ms $timeFunction;
     }
 
     &__contact-item &__site-email{
@@ -82,7 +82,7 @@
     }
 
     &__site-number &__icon-phone{
-        transition: fill 250ms var(--time-function);
+        transition: fill 250ms $timeFunction;
     }
 
     &__icon-email{
@@ -98,7 +98,7 @@
     }
 
     &__logo-blue{
-        color: var(--background-button-color);
+        color: $backgroundButtonColor;
     }
 }
 
