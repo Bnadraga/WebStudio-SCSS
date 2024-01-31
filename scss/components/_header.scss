@@ -24,7 +24,6 @@
     &__site-nav{
         color: $titleTextColor;
         display: flex;
-        margin-left: -200px;
     }
 
     &__site-link{
@@ -92,7 +91,6 @@
     }
 
     &__icon-phone{
-        margin-left: 30px;
         margin-right: 10px;
         text-decoration: none;
     }
@@ -112,27 +110,45 @@
         display: flex;
         flex-direction: column;
     }
+    .header__wrapper{
+        padding: 0;
+    }
+    .header{
+        padding-bottom: 2px;
+    }
     .header__icon-number{
         margin: 0;
     }
     .header__logo-blue{
         font-size: 24px;
     }
+    .header__contact-item-phone{
+        padding-top: 10px;
+    }
     .header__logo{
         font-size: 24px;
         letter-spacing: 0.72px;
         margin-right: 38px;
-        display: block;
-        position: relative;
-        top: 26px;
-        right: 15px;
-        padding-bottom: 26px;
+        margin-bottom: 26px;
+        margin-top: 26px;
     }
     .header__site-link:not(:last-child){
         margin-left: 50px;
     }
 }
-
+@media screen and (min-width: 1200px){
+    .header__wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header__contact-list{
+        flex-direction: row;
+    }
+    .header__contact-item-phone{
+        margin-left: 50px;
+        margin-top: -12px;
+    }
+}
 .header__site-email{
     color: $primaryTextColor;
 
